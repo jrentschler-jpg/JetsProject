@@ -261,7 +261,8 @@ public class JetsApplication {
 			j1 = new PassengerJet();
 			break;
 		}
-		System.out.println("Select 1. Cargo");
+		System.out.println("Type of Jet: ");
+		j1.setTypeOfJet(scanner.next());
 		System.out.println("---> 1. Add Custom Jet Model Name: ");
 		j1.setModel(scanner.next());
 		System.out.println("---> 2. Enter Speed Of New Jet: ");
