@@ -14,22 +14,36 @@ public class AirField {
 	public AirField() {
 		jets = new ArrayList<Jet>();
 		
-		try ( BufferedReader bufIn = new BufferedReader(new FileReader("jets")) ) {
-			  String line;
-			  while ((line = bufIn.readLine()) != null) {
-			    String [] fields = line.split(",");
-			    Jet jet = new Jet (fields[0], Double.parseDouble(fields[1]),Integer.parseInt(fields[2]),Long.parseLong(fields[3]));
-			    jets.add(jet);
-			  }
-			}
-			catch (IOException e) {
-			  System.err.println(e);
-			}
-		for (Jet jet : jets) {
-			System.out.println(jet);
-			
-		} {
-		}
+//		try ( BufferedReader bufIn = new BufferedReader(new FileReader("jets")) ) {
+//			  String line;
+//			  while ((line = bufIn.readLine()) != null) {
+//			    String [] fields = line.split(",");
+////			    Jet jet = new Jet (fields[0], Double.parseDouble(fields[1]),Integer.parseInt(fields[2]),Long.parseLong(fields[3]));
+//			    Jet jet;
+//			    switch (fields[0]) {
+//			    case "CargoPlane":
+//			    	jet = new CargoPlane(fields[0],fields[1], Double.parseDouble(fields[2]),Integer.parseInt(fields[3]),Long.parseLong(fields[4]));
+//			    	break;
+//			    case "FighterJet":
+//			    	jet = new FighterJet(fields[0],fields[1], Double.parseDouble(fields[2]),Integer.parseInt(fields[3]),Long.parseLong(fields[4]));
+//			    	break;
+//			    case "PassengerJet":
+//			    	jet = new PassengerJet(fields[0],fields[1], Double.parseDouble(fields[2]),Integer.parseInt(fields[3]),Long.parseLong(fields[4]));
+//			    	break;
+//			    default: jet = new GenericJet(fields[0],fields[1], Double.parseDouble(fields[2]),Integer.parseInt(fields[3]),Long.parseLong(fields[4]));
+//			    
+//			    }
+//			    airField.add(jet);
+//			  }
+//			}
+//			catch (IOException e) {
+//			  System.err.println(e);
+//			}
+//		for (Jet jet : jets) {
+//			System.out.println(jet);
+//			
+//		} {
+//		}
 //		
 	};
 	

@@ -1,17 +1,31 @@
 package com.skilldistillery.jet;
 
 public abstract class Jet {
+	private String typeOfJet;
 	private String model;
 	private double speed;
 	private int range;
 	private long price;
 	
-	public Jet(String model, double speed, int range, long price) {
+	public Jet(String typeOfJet,String model, double speed, int range, long price) {
 		super();
+		this.typeOfJet = typeOfJet;
 		this.model = model;
 		this.speed = speed;
 		this.range = range;
 		this.price = price;
+		
+	}
+	public Jet() {
+		
+	}
+
+	public String getTypeOfJet() {
+		return typeOfJet;
+	}
+
+	public void setTypeOfJet(String typeOfJet) {
+		this.typeOfJet = typeOfJet;
 	}
 
 	public String getModel() {
@@ -55,46 +69,11 @@ public abstract class Jet {
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Jet [model=").append(model).append(", speed=").append(speed).append(", range=").append(range)
-				.append(", price=").append(price).append("]");
+		builder.append("Jet [typeOfJet=").append(typeOfJet).append(", model=").append(model).append(", speed=")
+				.append(speed).append(", range=").append(range).append(", price=").append(price).append("]");
 		return builder.toString();
 	}
 
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((model == null) ? 0 : model.hashCode());
-		result = prime * result + (int) (price ^ (price >>> 32));
-		result = prime * result + range;
-		long temp;
-		temp = Double.doubleToLongBits(speed);
-		result = prime * result + (int) (temp ^ (temp >>> 32));
-		return result;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Jet other = (Jet) obj;
-		if (model == null) {
-			if (other.model != null)
-				return false;
-		} else if (!model.equals(other.model))
-			return false;
-		if (price != other.price)
-			return false;
-		if (range != other.range)
-			return false;
-		if (Double.doubleToLongBits(speed) != Double.doubleToLongBits(other.speed))
-			return false;
-		return true;
-	}
 	
 
 }
