@@ -62,10 +62,11 @@ public abstract class Jet {
 	public abstract void fly();
 	
 	public double getSpeedInMach(double speedInMph) {
-		double speedInMach = speedInMph/767.269; //verify calculations
+//		double speedInMach = speedInMph/767.269; //verify calculations
+//		Object getSpeedInMach = null;
+		double speedInMach = speedInMph/range; 
 		return speedInMach;
 	}
-
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
@@ -73,6 +74,8 @@ public abstract class Jet {
 				.append(speed).append(", range=").append(range).append(", price=").append(price).append("]");
 		return builder.toString();
 	}
+
+
 
 	
 

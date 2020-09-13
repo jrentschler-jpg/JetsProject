@@ -3,6 +3,7 @@ package com.skilldistillery.jet;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -34,7 +35,7 @@ public class JetsApplication {
 			System.out.println();
 			System.out.println("-----***-----***-----***----------***----------***----------***----------***-----");
 			System.out.println("                                                                                 ");
-			System.out.println("-----***-----         WELCOME, TO JOURDAN'S JET'S FLEET             -----***-----");
+			System.out.println("-----***-----         WELCOME, TO JOURDAN'S FLEET OF JETS!          -----***-----");
 			System.out.println("                                                                                 ");
 			System.out.println("-----***----------***----------***----------***----------***----------***--------");
 			System.out.println("                                                                                 ");
@@ -83,8 +84,11 @@ public class JetsApplication {
 				addNewJet(scanner);
 				break;
 			case 8:
-				// removeJet();
-				// break;
+				 removeJet(scanner, 0);
+				 break;
+//			case 9:
+//				getSpeedInMach();
+//				break;
 			case 9:
 				 quitProgram();
 				keepGoing = false;
@@ -100,6 +104,18 @@ public class JetsApplication {
 	}
 
 	
+
+	private void getSpeedInMach() {
+		System.out.println("Here is the Mach Speed of the Jets.");
+		List<Jet> listJets = airField.getJets();
+		Jet s2 = listJets.get(0);
+		for (Jet jet : listJets) {
+//			if (jet.getSpeedInMach(0)) {
+//				s2 = jet;
+			}
+		
+		
+	}
 
 	private void quitProgram() {
 	System.out.println("This Project is killing me!!! I am out!!!!");
@@ -275,5 +291,22 @@ public class JetsApplication {
 		airField.addNewJet(j1);
 
 	}
-
-}
+	private void removeJet(Scanner scanner, int index) {
+		List<Jet> listJets = airField.getJets();
+//		System.out.println("The list of jets in your fleet: ");
+//		for (int i = 0; i < listJets.size(); i++) {
+		int i = 0;
+		for (Jet jet : listJets) {
+			System.out.println(i + " " + jet.getModel());
+			
+			i++;
+		}	
+		System.out.println();
+		System.out.println("-----***-----***-----***----------***----------***----------***----------***-----");
+		System.out.println("Please enter in the number associated with the Jet you would like to remove: ");
+//		System.out.println(listJets);
+		int removeJet = scanner.nextInt();
+		airField.removeJet(removeJet);
+	}
+		
+	}
