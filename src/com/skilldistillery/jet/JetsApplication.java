@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class JetsApplication {
 	private AirField airField;
 	private Scanner scanner;
-//	PassengerJet jetImpl = new PassengerJet (null, null, 0, 0, 0);
+
 
 	public static void main(String[] args) {
 		JetsApplication jetsApp = new JetsApplication();
@@ -105,18 +105,6 @@ public class JetsApplication {
 
 	
 
-//	private void getSpeedInMach() {
-//		System.out.println("Here is the Mach Speed of the Jets.");
-//		List<Jet> listJets = airField.getJets();
-//		Jet s2 = listJets.get(0);
-//		for (Jet jet : listJets) {
-////			if (jet.getSpeedInMach(0)) {
-////				s2 = jet;
-//			}
-		
-		
-//	}
-
 	private void quitProgram() {
 	System.out.println("I don't know about you, but I am EXHAUSTED from JETS! Let's go get a DRINK :)!!!");
 		
@@ -190,7 +178,6 @@ public class JetsApplication {
 		List<Jet> listJets = airField.getJets();
 //	Jet s1 = new Jet();
 		Jet s1 = listJets.get(0);
-//	s.setRange(65);
 		for (Jet jet : listJets) {
 			if (jet.getRange() > s1.getRange()) {
 				s1 = jet;

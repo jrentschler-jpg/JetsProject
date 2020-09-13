@@ -9,7 +9,7 @@ import java.util.List;
 
 
 public class AirField {
-	private List<Jet> jets; //= new ArrayList<>();
+	private List<Jet> jets; 
 	
 	public AirField() {
 		jets = new ArrayList<Jet>();
