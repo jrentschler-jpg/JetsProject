@@ -41,12 +41,12 @@ public class JetsApplication {
 			System.out.println("                                                                                 ");
 			System.out.println("   >>PLEASE MAKE A SELECTION FROM THE FOLLOWING MENU OPTIONS:                    ");
 			System.out.println("                                                                                 ");
-			System.out.println("   >>1. LIST FLEET                                                             ");
-			System.out.println("   >>2. FLY ALL JETS                                                          ");
-			System.out.println("   >>3. VIEW FASTEST JET                                                          ");
-			System.out.println("   >>4. VIEW JET WITH LONGEST RANGE                                              ");
-			System.out.println("   >>5. LOAD ALL CARGO JETS                                                      ");
-			System.out.println("   >>6. DOGFIGHT !*!*!                                                                ");
+			System.out.println("   >>1. LIST THE FLEET OF JETS                                                              ");
+			System.out.println("   >>2. FLY ALL OF THE JETS                                                          ");
+			System.out.println("   >>3. VIEW THE FASTEST JET                                                          ");
+			System.out.println("   >>4. VIEW THE JET WITH THE LONGEST RANGE                                              ");
+			System.out.println("   >>5. LOAD ALL OF THE CARGO JETS                                                      ");
+			System.out.println("   >>6. LET'S HAVE A DOGFIGHT !*!*!                                                                ");
 			System.out.println("   >>7. ADD A JET TO THE FLEET                                                      ");
 			System.out.println("   >>8. REMOVE A JET FROM THE FLEET                                                 ");
 			System.out.println("   >>9. QUIT                                                                     ");
