@@ -41,15 +41,15 @@ public class JetsApplication {
 			System.out.println("                                                                                 ");
 			System.out.println("   >>PLEASE MAKE A SELECTION FROM THE FOLLOWING MENU OPTIONS:                    ");
 			System.out.println("                                                                                 ");
-			System.out.println("   >>1. LiSt FlEet                                                               ");
-			System.out.println("   >>2. FlY aLl JeTs                                                             ");
-			System.out.println("   >>3. ViEw FaStEsT jEt                                                         ");
-			System.out.println("   >>4. ViEw JeT wItH lOnGeSt RaNgE                                              ");
-			System.out.println("   >>5. LoAd AlL cArGo JeTs                                                      ");
-			System.out.println("   >>6. DoGfIgHt!                                                                ");
-			System.out.println("   >>7. AdD a JeT tO fLeEt                                                     ");
-			System.out.println("   >>8. ReMoVe a JeT fRoM fLeEt                                                  ");
-			System.out.println("   >>9. QuIt                                                                     ");
+			System.out.println("   >>1. LIST FLEET                                                             ");
+			System.out.println("   >>2. FLY ALL JETS                                                          ");
+			System.out.println("   >>3. VIEW FASTEST JET                                                          ");
+			System.out.println("   >>4. VIEW JET WITH LONGEST RANGE                                              ");
+			System.out.println("   >>5. LOAD ALL CARGO JETS                                                      ");
+			System.out.println("   >>6. DOGFIGHT !*!*!                                                                ");
+			System.out.println("   >>7. ADD A JET TO THE FLEET                                                      ");
+			System.out.println("   >>8. REMOVE A JET FROM THE FLEET                                                 ");
+			System.out.println("   >>9. QUIT                                                                     ");
 			System.out.println("                                                                                 ");
 			System.out.println("-----***-----***-----***----------***----------***----------***----------***-----");
 			System.out.println("                                                                                 ");
@@ -222,25 +222,6 @@ public class JetsApplication {
 
 		}
 	}
-//		private PassengerJet(String model, double speed, int range, long price) {
-//			
-//			
-//		}
-//		private void addCustomJets( Scanner scanner) {
-
-	// inputKindOfJetType = scanner.nextInt();
-//			int select = scanner.nextInt();
-//			
-//			String kb = kb.nextLine();
-//			scanner = new Scanner(System.in);
-//			if(select == 1) {
-//				j1.addNewJet();
-//				addNewJet(1);
-//				
-//				Jet cp = new CargoPlane (model, speed, range, price);
-//			}
-
-//		}
 	private void addNewJet(Scanner scanner) {
 
 		System.out.println("-----***-----***-----***----------***----------***----------***----------***-----");
@@ -263,7 +244,7 @@ public class JetsApplication {
 		Jet j1 = new GenericJet();
 
 		
-		System.out.println("What type of plane would you like to add? Cargo, fighter, passenager jet");
+		System.out.println("What type of plane would you like to add? Cargo, fighter, passenager");
 		typeOfJet = scanner.next().toLowerCase();
 		switch(typeOfJet) {
 		case "cargo":
