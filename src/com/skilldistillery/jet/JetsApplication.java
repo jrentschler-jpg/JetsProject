@@ -39,7 +39,7 @@ public class JetsApplication {
 			System.out.println("                                                                                 ");
 			System.out.println("-----***----------***----------***----------***----------***----------***--------");
 			System.out.println("                                                                                 ");
-			System.out.println("   >>PLEASE SELECTION FROM THE FOLLOWING MENU OPTIONS:                           ");
+			System.out.println("   >>PLEASE MAKE A SELECTION FROM THE FOLLOWING MENU OPTIONS:                    ");
 			System.out.println("                                                                                 ");
 			System.out.println("   >>1. LiSt FlEet                                                               ");
 			System.out.println("   >>2. FlY aLl JeTs                                                             ");
@@ -95,7 +95,7 @@ public class JetsApplication {
 				 break;
 
 			default:
-				System.out.println("Clearly you are not a pilot!");
+				System.out.println("MAYDAY! MAYDAY! WE HAVE A PROBLEM...Clearly you are not a pilot!");
 				break;
 			}
 
@@ -105,20 +105,20 @@ public class JetsApplication {
 
 	
 
-	private void getSpeedInMach() {
-		System.out.println("Here is the Mach Speed of the Jets.");
-		List<Jet> listJets = airField.getJets();
-		Jet s2 = listJets.get(0);
-		for (Jet jet : listJets) {
-//			if (jet.getSpeedInMach(0)) {
-//				s2 = jet;
-			}
+//	private void getSpeedInMach() {
+//		System.out.println("Here is the Mach Speed of the Jets.");
+//		List<Jet> listJets = airField.getJets();
+//		Jet s2 = listJets.get(0);
+//		for (Jet jet : listJets) {
+////			if (jet.getSpeedInMach(0)) {
+////				s2 = jet;
+//			}
 		
 		
-	}
+//	}
 
 	private void quitProgram() {
-	System.out.println("This Project is killing me!!! I am out!!!!");
+	System.out.println("I don't know about you, but I am EXHAUSTED from JETS! Let's go get a DRINK :)!!!");
 		
 	}
 
@@ -167,6 +167,7 @@ public class JetsApplication {
 	private void flyAllJets() {
 		List<Jet> listJets = airField.getJets();
 		for (Jet jet : listJets) {
+			jet.fight();
 			jet.fly();
 		}
 	}

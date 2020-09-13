@@ -63,7 +63,6 @@ public abstract class Jet {
 	
 	public double getSpeedInMach(double speedInMph) {
 //		double speedInMach = speedInMph/767.269; //verify calculations
-//		Object getSpeedInMach = null;
 		double speedInMach = speedInMph/range; 
 		return speedInMach;
 	}
@@ -73,6 +72,10 @@ public abstract class Jet {
 		builder.append("Jet [typeOfJet=").append(typeOfJet).append(", model=").append(model).append(", speed=")
 				.append(speed).append(", range=").append(range).append(", price=").append(price).append("]");
 		return builder.toString();
+	}
+	public void fight() {
+		// TODO Auto-generated method stub
+		
 	}
 
 
